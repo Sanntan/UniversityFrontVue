@@ -22,10 +22,10 @@ async function onSummarizationClick() {
   <div class="mt-16">
     <form class="flex flex-col w-fit mx-auto gap-3" @submit.prevent="onSummarizationClick">
       <textarea
-        class="border border-slate-300 bg-slate-100 resize-none outline-none rounded-md px-3 py-2 placeholder:italic"
-        rows="8"
-        cols="150"
-        placeholder="Введите текст..."
+        class="border border-slate-300 bg-slate-100 resize-none outline-none rounded-3xl px-3 py-2 placeholder:italic bg-gradient-to-br from-sky-200 via-sky-100 to-pink-200 mt-4 text-black font-bold bg-opacity-50"
+        rows="2"
+        cols="30"
+        placeholder="Введите текст"
         v-model="text"
       ></textarea>
 
@@ -53,5 +53,16 @@ async function onSummarizationClick() {
         value="Отправить"
       />
     </form>
+
+    <form class="flex flex-col w-fit mx-auto gap-4" @submit.prevent="onSummarizationClick">
+      <textarea
+        class="border border-slate-300 bg-slate-100 resize-none outline-none rounded-3xl px-3 py-2 placeholder:italic bg-gradient-to-br from-sky-200 via-sky-100 to-pink-200 mt-4 text-black font-bold bg-opacity-50"
+        rows="6"
+        cols="100"
+        placeholder="Обработанный текст"
+        v-model="text"
+      ></textarea>
+    </form>
+
   </div>
 </template>

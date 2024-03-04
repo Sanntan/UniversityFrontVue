@@ -17,10 +17,10 @@ async function onLogoutBtnClick() {
 </script>
 
 <template>
-  <header class="bg-slate-100 shadow-md py-3">
+  <header class="">
     <div class="w-11/12 mx-auto flex items-center justify-between">
-      <router-link to="/">
-        <h1 class="font-bold italic text-2xl">Annotation</h1>
+      <router-link to="/" class="block text-left text-black relative">
+        <h1 class="font-mono text-3xl absolute top-[10px]">Annotation</h1>
       </router-link>
 
       <div
@@ -33,8 +33,26 @@ async function onLogoutBtnClick() {
         </button>
       </div>
       <router-link v-else to="/login" title="Вход">
-        <i class="fa-solid fa-right-to-bracket text-xl"></i>
+        <i class="fa-solid fa-right-to-bracket text-xl absolute top-[10px]"></i>
       </router-link>
     </div>
   </header>
 </template>
+
+<style>
+
+.h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+</style>
