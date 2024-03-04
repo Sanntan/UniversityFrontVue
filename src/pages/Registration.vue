@@ -28,11 +28,11 @@ async function onRegistrationSubmit() {
 
 <template>
   <form
-  class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-slate-100 px-4 pt-10 pb-7 border border-slate-400 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2"
+  class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2"
   @submit.prevent="onRegistrationSubmit"
 >
-  <h2 class="font-mono text-center text-2xl border-b border-b-slate-300 pb-3">
-    Форма регистрации
+  <h2 class="font-sans text-gray-700 font-bold pb-4 text-center text-3xl">
+    Регистрация
   </h2>
 
   <div class="flex flex-col gap-3 mt-4">
@@ -45,7 +45,7 @@ async function onRegistrationSubmit() {
     </p>
     <input
       required
-      class="font-mono border border-slate-300 py-2 px-3 outline-none rounded-3xl transition focus:border-slate-400 placeholder:italic"
+      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
       type="text"
       minlength="4"
       placeholder="Введите логин..."
@@ -53,25 +53,26 @@ async function onRegistrationSubmit() {
     />
     <input
       required
-      class="font-mono border border-slate-300 py-2 px-3 outline-none rounded-3xl transition focus:border-slate-400 placeholder:italic"
+      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
       type="email"
       placeholder="Введите email..."
       v-model="email"
     />
     <input
       required
-      class="font-mono border border-slate-300 py-2 px-3 outline-none rounded-3xl transition focus:border-slate-400 placeholder:italic"
+      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
       type="password"
       minlength="4"
       placeholder="Введите пароль..."
       v-model="password"
     />
   </div>
-
+  <div class="text-center">
     <input
-      class="font-mono bg-green-500 text-white rounded-3xl cursor-pointer hover:bg-green-600 active:bg-green-700 py-2 px-3 mt-5"
+      class=" shadow-xl font-bold px-10 font-sans bg-gray-100 py-3 mb-3 mt-3 px-6 outline-none rounded-3xl transition placeholder:italic placeholder-gray-700 text-gray-700 cursor-pointer text-center"
       type="submit"
       value="Создать аккаунт"
     />
+  </div>
   </form>
 </template>
