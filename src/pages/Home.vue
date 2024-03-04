@@ -22,7 +22,7 @@ async function onSummarizationClick() {
   <div class="mt-16">
     <form class="flex flex-col w-fit mx-auto gap-3" @submit.prevent="onSummarizationClick">
       <textarea
-        class="border border-slate-300 bg-slate-100 resize-none outline-none rounded-3xl px-3 py-2 placeholder:italic bg-gradient-to-br from-sky-200 via-sky-100 to-pink-200 mt-4 text-black font-bold bg-opacity-50"
+        class="border border-slate-300 bg-slate-100 resize-none outline-none rounded-3xl px-3 py-2 placeholder:italic bg-gradient-to-br from-sky-200 via-sky-100 to-pink-200 mt-20 text-black font-bold bg-opacity-50"
         rows="2"
         cols="30"
         placeholder="Введите текст"
@@ -48,7 +48,7 @@ async function onSummarizationClick() {
       </div>
 
       <input
-        class="cursor-pointer bg-green-600 rounded-md text-white py-2"
+        class="cursor-pointer bg-white-600 rounded-md text-black py-2 border-2 border-black rounded-2"
         type="submit"
         value="Отправить"
       />

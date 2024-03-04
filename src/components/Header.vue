@@ -20,7 +20,7 @@ async function onLogoutBtnClick() {
   <header class="">
     <div class="w-11/12 mx-auto flex items-center justify-between">
       <router-link to="/" class="block text-left text-black relative">
-        <h1 class="font-mono text-3xl absolute top-[10px]">Annotation</h1>
+        <h1 class="font-mono text-3xl absolute top-[18px] left-[-25px]">Annotation</h1>
       </router-link>
 
       <div
@@ -33,7 +33,7 @@ async function onLogoutBtnClick() {
         </button>
       </div>
       <router-link v-else to="/login" title="Вход">
-        <i class="fa-solid fa-right-to-bracket text-xl absolute top-[10px]"></i>
+        <i class="fa-solid fa-right-to-bracket text-xl absolute top-[18px]"></i>
       </router-link>
     </div>
   </header>
