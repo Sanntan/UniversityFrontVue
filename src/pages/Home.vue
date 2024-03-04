@@ -5,12 +5,12 @@ import {
   abstractiveSummarization
 } from '../services/summarizationService.js'
 
-const text = ref<string>('')
+const text = ref('')
 const numberSentences = ref(3)
-const summarizationMethod = ref<'extractive' | 'abstractive'>('extractive')
+const summarizationMethod = ref('extractive')
 
 async function onSummarizationClick() {
-  if (summarizationMethod.value === 'extractive') {
+  if (summarizationMethod === 'extractive') {
     text.value = await extractiveSummarization(text.value, numberSentences.value)
   } else {
     text.value = await abstractiveSummarization(text.value)
@@ -31,8 +31,8 @@ async function onSummarizationClick() {
 
       <div class="flex justify-between items-center">
         <select v-model="summarizationMethod">
-          <option value="abstractive">Абстра��тивная</option>
-          <option value="extractive">Экстра��тивная</option>
+          <option value="abstractive">Абстрактивная</option>
+          <option value="extractive">Экстрактивная</option>
         </select>
 
         <div class="flex items-center gap-4" v-if="summarizationMethod === 'extractive'">
