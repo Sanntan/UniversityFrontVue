@@ -27,6 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-
-пися попа
