@@ -28,10 +28,10 @@ async function onRegistrationSubmit() {
 
 <template>
   <form
-  class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2 dark:bg-black"
+  class="border-none w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2 dark:bg-gray-800"
   @submit.prevent="onRegistrationSubmit"
 >
-  <h2 class="font-sans text-gray-700 font-bold pb-4 text-center text-3xl">
+  <h2 class="font-sans text-gray-900 font-bold pb-4 text-center text-3xl dark:text-gray-400">
     Регистрация
   </h2>
 
@@ -45,7 +45,8 @@ async function onRegistrationSubmit() {
     </p>
     <input
       required
-      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
+      class="font-sans bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder-gray-900 text-gray-900
+      dark:bg-gray-800 dark:border-2 dark:border-gray-400 dark:text-gray-400 dark:placeholder-gray-400"
       type="text"
       minlength="4"
       placeholder="Введите логин..."
@@ -53,14 +54,16 @@ async function onRegistrationSubmit() {
     />
     <input
       required
-      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
+      class="font-sans bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder-gray-900 text-gray-900
+      dark:bg-gray-800 dark:border-2 dark:border-gray-400 dark:text-gray-400 dark:placeholder-gray-400"
       type="email"
       placeholder="Введите email..."
       v-model="email"
     />
     <input
       required
-      class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
+      class="font-sans bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder-gray-900 text-gray-900
+      dark:bg-gray-800 dark:border-2 dark:border-gray-400 dark:text-gray-400 dark:placeholder-gray-400"
       type="password"
       minlength="4"
       placeholder="Введите пароль..."
@@ -69,7 +72,8 @@ async function onRegistrationSubmit() {
   </div>
   <div class="text-center">
     <input
-      class=" shadow-xl font-bold px-10 font-sans bg-gray-100 py-3 mb-3 mt-3 px-6 outline-none rounded-3xl transition placeholder:italic placeholder-gray-700 text-gray-700 cursor-pointer text-center"
+      class="font-bold px-10 font-sans bg-gray-100 py-3 mb-3 mt-3 px-6 outline-none rounded-3xl transition text-gray-700 cursor-pointer text-center
+      dark:bg-gray-800 dark:text-gray-400 dark:border-2 dark:border-gray-400 dark:hover:bg-gray-400 dark:hover:text-white"
       type="submit"
       value="Создать аккаунт"
     />

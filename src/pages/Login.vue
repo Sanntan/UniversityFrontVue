@@ -27,11 +27,10 @@ async function onLoginSubmit() {
 
 <template>
   <form
-    class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2
-    bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
+    class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2 dark:bg-gray-800"
     @submit.prevent="onLoginSubmit"
   >
-    <h2 class="font-sans text-gray-700 font-bold pb-4 text-center text-3xl">
+    <h2 class="font-sans text-gray-900 font-bold pb-4 text-center text-3xl dark:text-gray-400">
       Авторизация
     </h2>
 
@@ -45,7 +44,8 @@ async function onLoginSubmit() {
       </p>
       <input
         required
-        class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-900 text-gray-900"
+        class="shadow-xl font-sans outline-none bg-gray-100 py-3 mb-3 px-3 rounded-3xl placeholder-gray-900 text-gray-900
+        dark:bg-gray-800 dark:border-2 dark:border-gray-400 dark:text-gray-400 dark:placeholder-gray-400 dark:shadow-none"
         type="email"
         placeholder="Введите email..."
         v-model="email"
@@ -53,7 +53,8 @@ async function onLoginSubmit() {
       <input
         required
         minlength="4"
-        class="font-sans shadow-xl bg-gray-100 py-3 mb-3 px-3 outline-none rounded-3xl transition placeholder:italic placeholder-gray-700 text-gray-700"
+        class="font-sans shadow-xl outline-none bg-gray-100 py-3 mb-3 px-3 rounded-3xl placeholder-gray-900 text-gray-900
+        dark:bg-gray-800 dark:border-2 dark:border-gray-400 dark:text-gray-400 dark:placeholder-gray-400 dark:shadow-none"
         type="password"
         placeholder="Введите пароль..."
         v-model="password"
@@ -62,32 +63,16 @@ async function onLoginSubmit() {
 
     <div class="text-center">
       <input
-        class="shadow-xl font-bold px-10 font-sans bg-gray-100 py-3 mb-3 mt-3 px-6 outline-none rounded-3xl transition placeholder:italic placeholder-gray-700 text-gray-700 cursor-pointer text-center"
+        class="hover:bg-gray-900 hover:text-white shadow-xl font-bold outline-none px-10 font-sans bg-gray-100 py-3 mb-3 mt-3 px-6 rounded-3xl transition text-gray-900 cursor-pointer text-center
+        dark:bg-gray-800 dark:text-gray-400 dark:border-2 dark:border-gray-400 dark:hover:bg-gray-400 dark:hover:text-white dark:shadow-none"
         type="submit"
         value="Войти"
       />
     </div>
 
     <div class="text-center">
-      <router-link to="/registration" class="font-sans text-gray-700 hover:underline">Нет аккаунта?</router-link>
+      <router-link to="/registration" class="font-sans text-gray-900 outline-none dark:text-gray-400 hover:underline">Нет аккаунта?</router-link>
     </div>
 
   </form>
 </template>
-
-<!-- <style>
-body {
-  background: rgb(254,232,255);
-background: linear-gradient(113deg, rgba(254,232,255,1) 5%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 62%, rgba(233,255,254,1) 99%);
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111; /* Replace with your desired color */
-  }
-}
-</style> -->

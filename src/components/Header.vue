@@ -24,7 +24,7 @@ async function onLogoutBtnClick() {
   <header class="">
     <div class="w-11/12 mx-auto flex items-center justify-between">
       <router-link to="/" class="block text-left text-black relative">
-        <h1 class="font-sans text-3xl text-gray-700 font-bold absolute top-[18px] left-[-25px]">Annotation</h1>
+        <h1 class="font-sans text-3xl text-gray-900 font-bold absolute top-[18px] left-[-25px] dark:text-gray-400">Annotation</h1>
       </router-link>
 
       <div
@@ -36,7 +36,7 @@ async function onLogoutBtnClick() {
           <i class="fa-solid fa-right-from-bracket text-xl" title="Выход"></i>
         </button>
       </div>
-      <router-link v-else to="/login" title="Вход">
+      <router-link class="text-gray-900 dark:text-gray-400" v-else to="/login" title="Вход">
         <i class="fa-solid fa-right-to-bracket text-xl absolute top-[18px]"></i>
       </router-link>
     </div>
@@ -45,7 +45,7 @@ async function onLogoutBtnClick() {
     <button @click="toggleDark()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
+        class="h-6 w-6 text-gray-900 dark:text-gray-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
