@@ -22,7 +22,8 @@ async function onSummarizationClick() {
   <div class="mt-16">
     <form class="flex flex-col w-fit mx-auto gap-3" @submit.prevent="onSummarizationClick">
       <textarea
-        class="shadow-xl resize-none outline-none rounded-3xl px-3 py-2 bg-gray-100 border mt-20 placeholder-gray-900 text-gray-900 font-sans placeholder:italic"
+        class="shadow-xl resize-none outline-none rounded-3xl px-3 py-2 bg-gray-100 border mt-20 placeholder-gray-900 text-gray-900 font-sans placeholder:italic 
+        dark:bg-gray-800 dark:text-gray-300 dark:placeholder-gray-300"
         rows="6"
         cols="30"
         placeholder="Вставьте файл"
@@ -65,6 +66,5 @@ async function onSummarizationClick() {
         </div>
       </div>
     </form>
-
   </div>
 </template>

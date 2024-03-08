@@ -28,7 +28,7 @@ async function onRegistrationSubmit() {
 
 <template>
   <form
-  class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2"
+  class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2 dark:bg-black"
   @submit.prevent="onRegistrationSubmit"
 >
   <h2 class="font-sans text-gray-700 font-bold pb-4 text-center text-3xl">

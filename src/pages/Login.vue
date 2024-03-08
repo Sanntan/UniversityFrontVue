@@ -27,7 +27,8 @@ async function onLoginSubmit() {
 
 <template>
   <form
-    class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2"
+    class="w-1/3 max-lg:w-1/2 max-sm:w-10/12 bg-white shadow-xl border px-4 pt-10 pb-7 rounded-3xl fixed top-1/4 left-1/2 -translate-x-1/2
+    bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"
     @submit.prevent="onLoginSubmit"
   >
     <h2 class="font-sans text-gray-700 font-bold pb-4 text-center text-3xl">
@@ -74,7 +75,7 @@ async function onLoginSubmit() {
   </form>
 </template>
 
-<style>
+<!-- <style>
 body {
   background: rgb(254,232,255);
 background: linear-gradient(113deg, rgba(254,232,255,1) 5%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 62%, rgba(233,255,254,1) 99%);
@@ -83,4 +84,10 @@ background: linear-gradient(113deg, rgba(254,232,255,1) 5%, rgba(255,255,255,1) 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-</style>
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111; /* Replace with your desired color */
+  }
+}
+</style> -->
